@@ -5,7 +5,7 @@ from django.shortcuts import render
 def HomePage(request):
     context={
         "name":"Balamurugan",
-        "role":"Manager",
+        "role":"manager",
         "numbers":[1,2,3,4,5], 
         "marks":{
             "Tamil":100,

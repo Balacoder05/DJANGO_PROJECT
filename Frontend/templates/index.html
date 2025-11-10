@@ -11,9 +11,10 @@
     {% if role == "admin" %}
     <h1>welcome{{name}}</h1>
 
-    {% elif  role == "Manager" %}
-    <h1>Welcome Guest</h1>
-
+    {% elif role == "manager" %}
+    <h2>Welcome Manager</h2>
+    {% else %}
+    <h2>Welcome Guest</h2>
     {% endif  %}
     {{numbers}}
     {{marks}}
