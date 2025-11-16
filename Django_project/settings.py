@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Inventory',
     'Frontend',
-    'bootstrap5'
+    'bootstrap5',
 
 ]
 
