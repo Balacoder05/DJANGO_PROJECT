@@ -21,7 +21,5 @@ def contactpage(request):
     return render(request,"contact.html")
 
 def servicespage(request):
-    context={
-        "name":"Balamurugan",
-    }
-    return render(request,"services.html",context)
+    
+    return render(request,"services.html")
