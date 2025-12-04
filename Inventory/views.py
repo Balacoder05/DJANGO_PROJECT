@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .forms import*
+from .models import*
 
 # Create your views here.
 
@@ -23,3 +25,11 @@ def contactpage(request):
 def servicespage(request):
     
     return render(request,"services.html")
+
+def productsAdd(request):
+
+    context={
+        'product_form':Product_Form()
+    }
+
+    return render(request,"products_add.html",context)
