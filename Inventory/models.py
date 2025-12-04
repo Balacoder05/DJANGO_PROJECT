@@ -11,4 +11,4 @@ class Product(models.Model):
     Food_Product=models.BooleanField(default=False)
 
     def __str__(self):
-        return self.Product_name
+        return self.Product_name+" "+self.Product_code
