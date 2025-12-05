@@ -33,6 +33,14 @@ def productsAdd(request):
     }
 
     if request.method == "POST":
-        print(request.POST)
+        product_form=Product_Form(request.POST)
+
+        if product_form.is_valid():
+            product_form.save()
+            
+    #     print(request.POST)  this onefor show datas only in terminal
+
+     
+
 
     return render(request,"products_add.html",context)
