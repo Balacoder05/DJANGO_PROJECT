@@ -11,6 +11,17 @@
             <th>Food product</th>
         </tr>
     </thead>
+    <tbody>
+        {%  for product in all_products %}
+        <tr>
+            <td>{{product.Product_name}}</td>
+            <td>{{product.Product_code}}</td>
+            <td>{{product.Price}}</td>
+            <td>{{product.gst}}</td>
+            <td>{{product.Food_Product}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
 </table>
        
 

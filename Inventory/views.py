@@ -46,7 +46,12 @@ def productsAdd(request):
     return render(request,"products_add.html",context)
 
 def AllProducts(request):
-    
-    all_products=Product.object.all()
 
-    return render(request,'products.html')
+    
+    context={
+    
+        "all_products" :Product.objects.all()
+    }
+    
+
+    return render(request,'products.html',context)
