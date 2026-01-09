@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .forms import*
 from .models import*
 
@@ -55,3 +55,11 @@ def AllProducts(request):
     
 
     return render(request,'products.html',context)
+
+
+def DeleteProducts(request,id):
+
+    selected_product=Product.objects.get(id=id)
+
+    selected_product.delete()
+    return redirect('/inventory/products/')

@@ -9,5 +9,6 @@ urlpatterns=[
     path('services/',servicespage),
     path('products/add/',productsAdd),
     path('products/',AllProducts),
+    path('products/delete/<int:id>/',DeleteProducts,name='product_delete'),
 
 ]

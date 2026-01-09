@@ -9,6 +9,9 @@
             <th>Price</th>
             <th>gst</th>
             <th>Food product</th>
+            <th>Update</th>
+            <th>Delete</th>
+
         </tr>
     </thead>
     <tbody>
@@ -19,6 +22,14 @@
             <td>{{product.Price}}</td>
             <td>{{product.gst}}</td>
             <td>{{product.Food_Product}}</td>
+            <td>
+                <button>Update</button>
+            </td>
+            <td>
+                <a href="{% url 'product_delete' product.id %}">
+                <button>Delete</button>
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </tbody>
