@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Inventory',
+    'OrderManagement',
     'Frontend',
     'django_bootstrap5',
 
